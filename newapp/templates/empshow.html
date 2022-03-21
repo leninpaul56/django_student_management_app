@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <div class="container-fluid" style="background-color: rgb(27, 22, 22);width: 100%;height: 750px;"> <br>
+        <i><h3 style="color: aliceblue;">Employee Details</h3></i>
+    <table border="2" style="background-color: cadetblue;color: black;width: 100%;">
+        <thead>
+            <tr>
+                <th>Employee Name</th>
+                <th>Email</th>
+                <th>Place</th>
+            </tr>
+        </thead>
+
+        <tbody>
+                {% for emp in empshow %}
+                <tr>
+                    <td>{{ emp.em_name }}</td>
+                    <td>{{ emp.em_email }}</td>
+                    <td>{{ emp.em_place }}</td>
+                    <td><button class="btn btn-primary"><a href="/editemployee/{{emp.id}}" style="color: black;">Edit</a></button></td>
+                    <td><button class="btn btn-primary"><a href="/deleteemployee/{{emp.id}}" style="color: black;">Delete</a></button></td>
+                </tr>    
+                {% endfor %}
+            
+            
+        </tbody>
+    </table> <br>
+    </div>
+    
+</body>
+</html>

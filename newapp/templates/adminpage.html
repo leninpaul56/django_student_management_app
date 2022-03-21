@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    {% load static %}
+</head>
+<body>
+
+    <div>
+        <ul class="nav justify-content-center" style="background-color:rgb(51, 50, 50);height: 55px;">
+            <li class="nav-item">
+                <a href="/saveemployee" class="nav-link">Add Employee</a>
+            </li>
+            <li class="nav-item">
+                <a href="/viewemployee" class="nav-link">Manage Employee</a>
+            </li>
+            <li class="nav-item">
+                <a href="/addstudent" class="nav-link">Add Student</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="carousel">
+        <img src="{% static '142566.jpg' %}" alt="" width="1536px" height="675px">
+        <div class="carousel-caption" style="color: black;margin-bottom: 330px;">
+            <h3>You Make a Diffrence Every Day..</h3>
+            <p>"The art of teaching is the art of assisting discovery"</p>
+            <p>My mother said I must always be intolerant of ignorance but understanding of illiteracy. That some people, unable to go to school, were more educated and more intelligent than college professors.</p>
+            <p>Deep down, every good teacher knows the impact and importance of education. It isn’t just about learning reading, writing and arithmetic at school. Instead, formal education is about gaining the knowledge and the skills needed to become a better person and create a better society to live in.
+
+                A proper education sets people up to grow personally, professionally, and socially. It can awaken joy, curiosity and a deep desire to solve problems</p>
+        </div>
+
+    </div>
+    
+</body>
+</html>
